@@ -228,6 +228,58 @@ function Services() {
   );
 }
 
+const shipmentGroups = [
+  {
+    title: 'Taşıdığımız Gönderiler',
+    className: 'accepted',
+    items: [
+      'Evrak ve belgeler',
+      'Özel hediyeler',
+      'Eczane ürünleri',
+      'Elektronik ürünler',
+      'Kişisel eşyalar',
+    ],
+  },
+  {
+    title: 'Taşımadığımız Gönderiler',
+    className: 'prohibited',
+    items: [
+      'Alkol',
+      'Sigara ve tütün ürünleri',
+      'Uyuşturucu maddeler',
+      'Silah ve mühimmat',
+      'Tehlikeli kimyasallar',
+    ],
+  },
+];
+
+function ShipmentPolicy() {
+  return (
+    <section id="shipment-policy" className="shipment-section light-section section-pad" aria-label="Taşıma kapsamı">
+      <div className="section-wrap shipment-grid">
+        {shipmentGroups.map((group, groupIndex) => (
+          <article
+            className={`shipment-card ${group.className} reveal reveal-delay-${groupIndex + 1}`}
+            key={group.title}
+          >
+            <h3>{group.title}</h3>
+            <ul>
+              {group.items.map((item) => (
+                <li key={item}>
+                  <span className="shipment-icon" aria-hidden="true">
+                    {group.className === 'accepted' ? <Check size={15} strokeWidth={2.5} /> : <X size={15} strokeWidth={2.5} />}
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 const trustItems = [
   { text: 'Hızlı Teslimat', icon: <Clock3 size={18} /> },
   { text: 'Güvenli Taşıma', icon: <ShieldCheck size={18} /> },
@@ -443,6 +495,7 @@ function Home() {
       <main>
         <Hero />
         <Services />
+        <ShipmentPolicy />
         <TrustBand />
         <Process />
         <Story />

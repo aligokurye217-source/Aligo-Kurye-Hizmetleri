@@ -181,6 +181,15 @@
 .service-card:hover .service-arrow { transform: translateX(3px) rotate(-12deg); background: var(--amber); color: var(--navy); }
 .service-card.light .service-arrow { background: rgba(23,42,66,.09); color: var(--ink); }
 
+.shipment-section { background: var(--cream-soft); }
+.shipment-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.shipment-card { padding: 30px; border: 1px solid var(--line); border-radius: 23px; background: var(--cream); }
+.shipment-card h3 { margin: 0 0 23px; color: var(--ink); font-family: 'Manrope', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 800; letter-spacing: -.045em; }
+.shipment-card ul { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.shipment-card li { display: flex; align-items: center; gap: 12px; color: #3e4a59; font-size: .9rem; line-height: 1.5; }
+.shipment-icon { display: grid; flex: 0 0 26px; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: rgba(18,136,184,.12); color: var(--blue); }
+.shipment-card.prohibited .shipment-icon { background: rgba(244,184,75,.25); color: var(--navy); }
+
 .trust-band { background: var(--navy); color: var(--cream); padding: 29px 0; }
 .trust-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
 .trust-item { display: flex; align-items: center; gap: 10px; color: rgba(245,240,229,.75); font-size: .75rem; font-weight: 600; }
@@ -302,6 +311,8 @@
   .section-heading h2 { font-size: 2.8rem; }
   .section-heading p { margin-top: 18px; }
   .service-grid { grid-template-columns: 1fr; }
+  .shipment-grid { grid-template-columns: 1fr; }
+  .shipment-card { padding: 24px; }
   .service-card, .service-card.featured { min-height: 295px; grid-row: auto; }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-item { font-size: .71rem; }
