@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "ALIGO Kurye"
+description = "İstanbul içi hızlı ve güvenilir kurye hizmetlerini WhatsApp üzerinden sunan, Türkçe ve mobil uyumlu ALIGO kurye web sitesi."
+version = "1.0.0"
+id = "artifacts/aligo"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18187
+
+[services.development]
+run = "pnpm --filter @workspace/aligo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aligo", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/aligo/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18187"
+BASE_PATH = "/"

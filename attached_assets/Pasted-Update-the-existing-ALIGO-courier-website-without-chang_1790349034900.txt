@@ -1,0 +1,137 @@
+Update the existing ALIGO courier website without changing its current overall design, layout, colors, animations, typography, responsiveness, or existing functionality.
+
+Make ONLY the following changes:
+
+### 1. UPDATE INSTAGRAM ACCOUNT
+
+Replace the current Instagram account and Instagram URL everywhere on the website with:
+
+Instagram username:
+@aligokurye217
+
+Instagram URL:
+https://www.instagram.com/aligokurye217/
+
+IMPORTANT:
+
+* Update every Instagram button, icon, link, footer link, floating social-media button, contact section, and any other Instagram reference.
+* The Instagram icon must open:
+  https://www.instagram.com/aligokurye217/
+* Remove the old Instagram username and old Instagram URL completely.
+* Make sure there are no broken or outdated Instagram links anywhere in the website.
+
+### 2. ADD A NEW SERVICE: VIP KURYE
+
+Add a new courier service called:
+
+"VIP Kurye"
+
+This must be added as a fourth service alongside the existing:
+
+* Motor
+* Orta Araç
+* Büyük Araç
+
+The new VIP Kurye card must visually match the existing service cards exactly:
+
+* Same card structure
+* Same typography
+* Same spacing
+* Same border radius
+* Same hover animation
+* Same image treatment
+* Same CTA behavior
+* Same responsive behavior
+
+Do NOT redesign the existing service cards.
+
+### VIP KURYE CONTENT
+
+Service title:
+"VIP Kurye"
+
+Description:
+"Acil gönderiler için öncelikli kurye hizmeti.
+Ortalama teslimat süresi 60-90 dakikadır."
+
+The text should be displayed naturally and professionally in Turkish.
+
+### VIP KURYE VISUAL
+
+Use a premium, professional courier visual that communicates:
+
+* Priority delivery
+* Speed
+* Professional service
+* Premium courier experience
+
+Prefer a realistic professional motorcycle/courier image.
+
+The image should fit the existing ALIGO visual style and should not look like a generic stock image.
+
+### VIP KURYE CTA
+
+Use the same CTA style as the other courier services.
+
+Button text:
+"Kurye Çağır"
+
+When clicked, open WhatsApp using the existing ALIGO WhatsApp number:
+
++90 546 690 76 32
+
+Use a pre-filled Turkish message specifically for VIP Kurye:
+
+"Merhaba ALIGO, VIP Kurye hizmetinden yararlanmak istiyorum. Gönderi detaylarını paylaşabilir miyim?"
+
+### 3. SERVICE ORDER / RESPONSIVE LAYOUT
+
+Because there are now four services, make sure the service section remains visually balanced.
+
+Desktop:
+Display the four service cards in a clean, balanced grid.
+
+Tablet:
+Automatically adapt the grid so the cards remain readable and visually balanced.
+
+Mobile:
+Display the cards vertically or in the most natural responsive layout.
+
+Do not allow cards to become too narrow.
+
+### 4. NAVIGATION / SERVICE REFERENCES
+
+If the website has a navigation menu, service dropdown, service links, or any section that lists the available courier services, add:
+
+"VIP Kurye"
+
+alongside the existing services.
+
+### 5. SEO / ACCESSIBILITY
+
+Add the VIP Kurye service naturally to:
+
+* Relevant page metadata where appropriate
+* Image alt text
+* Service section headings
+* Accessible labels
+
+Do not keyword-stuff the page.
+
+### IMPORTANT
+
+Do not modify:
+
+* ALIGO branding
+* Existing colors
+* Existing layout
+* Existing hero section
+* Existing WhatsApp number
+* Existing service descriptions
+* Existing animations
+* Existing typography
+* Existing navigation structure
+
+unless necessary to accommodate the new VIP Kurye service.
+
+The goal is to make these updates feel like they were part of the original ALIGO website from the beginning.
