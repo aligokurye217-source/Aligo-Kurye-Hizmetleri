@@ -144,6 +144,8 @@ const services: Service[] = [
     description: 'Acil küçük paketler, evraklar ve gün içinde yetişmesi gereken gönderiler için çevik çözüm.',
     note: 'Küçük paketler için',
     icon: <Bike size={22} />,
+    image: '/motor-scooter.png',
+    imageAlt: 'Motor kurye hizmeti için beyaz scooter',
     className: 'featured',
   },
   {
@@ -152,6 +154,8 @@ const services: Service[] = [
     description: 'Orta ve büyük boyutlu teslimatlar için Fiat Doblo veya eşdeğeri araç seçeneği.',
     note: 'Orta ve büyük teslimatlar',
     icon: <CarFront size={22} />,
+    image: '/orta-arac.png',
+    imageAlt: 'Orta Araç teslimatları için kompakt kapalı kasa araç',
     className: 'light',
   },
   {
@@ -160,6 +164,8 @@ const services: Service[] = [
     description: 'Hacimli, çok parçalı veya özel dikkat isteyen gönderileriniz için geniş kapasite.',
     note: 'Hacimli gönderiler için',
     icon: <Truck size={22} />,
+    image: '/buyuk-arac.png',
+    imageAlt: 'Büyük hacimli gönderiler için geniş van',
     className: '',
   },
   {
@@ -168,8 +174,8 @@ const services: Service[] = [
     description: 'Acil gönderiler için öncelikli kurye hizmeti. Ortalama teslimat süresi 60-90 dakikadır.',
     note: 'Ortalama 60-90 dakika',
     icon: <Bike size={22} />,
-    image: '/aligo-vip.png',
-    imageAlt: 'Öncelikli teslimat için profesyonel motorlu kurye',
+    image: '/vip-kurye.png',
+    imageAlt: 'Öncelikli VIP teslimat için motosikletli kurye',
     className: 'vip',
   },
 ];
@@ -196,7 +202,7 @@ function Services() {
                 </div>
                 <span className="service-icon">
                   {service.image
-                    ? <img src={service.image} alt={service.imageAlt ?? ''} />
+                    ? <img src={service.image} alt={service.imageAlt ?? ''} loading="lazy" decoding="async" />
                     : service.icon}
                 </span>
               </div>

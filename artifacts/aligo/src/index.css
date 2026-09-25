@@ -173,7 +173,7 @@
 .service-card p { color: rgba(245,240,229,.68); line-height: 1.6; font-size: .87rem; max-width: 255px; margin: 0; }
 .service-card.light p { color: rgba(23,42,66,.64); }
 .service-icon { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; border: 1px solid rgba(245,240,229,.24); border-radius: 13px; color: var(--amber); }
-.service-icon img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.service-icon img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: inherit; }
 .service-card.light .service-icon { color: var(--blue); border-color: rgba(23,42,66,.17); }
 .service-card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 34px; }
 .service-note { font-size: .72rem; opacity: .63; }
