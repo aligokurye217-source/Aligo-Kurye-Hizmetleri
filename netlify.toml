@@ -1,0 +1,9 @@
+[build]
+  base = "."
+  command = "PORT=18187 BASE_PATH=/ pnpm --filter @workspace/aligo run build"
+  publish = "artifacts/aligo/dist/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
